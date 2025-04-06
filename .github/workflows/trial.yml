@@ -11,3 +11,6 @@ jobs:
       - run: |
           echo "identifier: ${{ github.event.inputs.identifier }}"
         name: test
+      - name: URL
+        run: |
+          echo "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
