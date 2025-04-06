@@ -1,0 +1,11 @@
+on:
+  workflow_dispatch:
+    inputs:
+      identifier:
+        required: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "identifier: ${{ github.event.inputs.identifier }}"
