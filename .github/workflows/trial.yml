@@ -8,4 +8,5 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ github.event.inputs.identifier }}"
+      - run: echo "identifier: ${{ github.event.inputs.identifier }}"
+        name: test
